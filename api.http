@@ -1,0 +1,17 @@
+GET https://www.avanza.se/ab/component/highstockchart/getchart/orderbook
+Accept: */*
+Content-Type: application/json
+
+{
+  "orderbookId": 26268,
+  "chartType": "AREA",
+  "widthOfPlotContainer": 0,
+  "chartResolution": "HOUR",
+  "timePeriod": "week",
+  "ta": [],
+  "compareIds": [
+  ]
+}
+
+###
+
