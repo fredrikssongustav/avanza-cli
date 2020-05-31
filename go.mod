@@ -3,6 +3,7 @@ module github.com/fredrikssongustav/avanza-cli
 go 1.13
 
 require (
+	github.com/guptarohit/asciigraph v0.4.1
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/olekukonko/tablewriter v0.0.4
 	github.com/pquerna/otp v1.2.0 // indirect
