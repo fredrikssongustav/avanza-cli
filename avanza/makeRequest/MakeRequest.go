@@ -20,7 +20,7 @@ type Header struct {
 func MakeRequest(options RequestOptionsProps, headers []Header) *http.Response {
 	base := "https://www.avanza.se"
 
-	fmt.Printf(`Calling %s`, base+options.APIPath)
+	fmt.Println("📯 Calling ", base+options.APIPath,"\n")
 
 	req, _ := http.NewRequest(options.Method, base+options.APIPath, bytes.NewBuffer(options.Body))
 
