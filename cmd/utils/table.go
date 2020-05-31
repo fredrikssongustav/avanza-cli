@@ -9,7 +9,7 @@ import (
 
 func MakePositionTable(arr []operations.Position) {
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"AccountName", "Volume", "ProfitPercent", "AcquiredValue", "Value", "Currency", "LastPrice", "Name"})
+	table.SetHeader([]string{"AccountName", "Volume", "ProfitPercent", "AcquiredValue", "Value", "Currency", "LastPrice","OrderBookId", "Name"})
 
 	data := [][]string{}
 
@@ -21,6 +21,7 @@ func MakePositionTable(arr []operations.Position) {
 			fmt.Sprintf("%f", v.Value),
 			v.Currency,
 			fmt.Sprintf("%f", v.LastPrice),
+			v.OrderbookId,
 			v.Name})
 	}
 
